@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="circ.css">
+    <link rel="stylesheet" href="mf2c.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -10,12 +10,12 @@
     <nav>
         <!-- เลื่อนไปหน้าใหม่ตามค่าที่ถูกเลือก -->
         <select name="select" id="selectSomethi" onchange="navigate()">
-            <option value="/startPage/mf2h.html">Menu</option>
-            <option value="/circle/cirh.html">Circle</option>
-            <option value="/triangle/trih.html">Triangle</option>
-            <option value="/square/sqh.html">Square</option>
-            <option value="/pentagon/penh.html">Pentagon</option>
-            <option value="/hexagon/hexh.html">Hexagon</option>
+            <option value="mf2h.html">Menu</option>
+            <option value="cirh.html">Circle</option>
+            <option value="trih.html">Triangle</option>
+            <option value="sqh.html">Square</option>
+            <option value="penh.html">Pentagon</option>
+            <option value="hexh.html">Hexagon</option>
         </select>
     </nav>
 
@@ -25,7 +25,7 @@
             var selectedValue = document.getElementById("selectSomethi").value;
 
             // นำค่าที่ถูกเลือกไปยังหน้าใหม่
-            window.location.href = "Area-of-everything" + selectedValue;
+            window.location.href = selectedValue;
 
             // บันทึกค่าที่ถูกเลือกลงใน localStorage
             localStorage.setItem('selectedValue', selectedValue);
@@ -41,5 +41,7 @@
             }
         };
     </script>
+
+    <script src="mf2j.js"></script>
 </body>
 </html>
