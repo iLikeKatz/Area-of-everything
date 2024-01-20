@@ -19,4 +19,18 @@ option {
     color: black;
 }
 
+.border {
+    border: solid 1px #000000;
+}
 
+.img {
+    width: 50%;
+    height: 40%;
+}
+
+@media only screen and (max-width: 414px) {
+    .img{
+        width: 80%;
+        height: 80%;
+    }
+}
