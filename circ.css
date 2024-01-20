@@ -20,17 +20,40 @@ option {
 }
 
 .border {
-    border: solid 1px #000000;
+    border: solid 1px skyblue;
 }
 
 .img {
-    width: 50%;
-    height: 40%;
+    width: 30%;
+    height: 30%;
 }
+.Pi {
+    display: block;
+}
+#setPi {
+    text-align: left;
+    font-size: 5;
+}
+
+#PiValue{
+    background: rgb(248, 248, 248);
+  border: solid 1px gray;
+  border-radius: auto;
+  padding: 7px;
+  width: 185px;
+  margin-bottom: 5px;
+  color:rgb(77, 76, 76);
+}
+
+
 
 @media only screen and (max-width: 414px) {
     .img{
         width: 80%;
         height: 80%;
+    }
+
+    button{
+        width: 170px;
     }
 }

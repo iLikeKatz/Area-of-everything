@@ -25,3 +25,28 @@ function compTri() {
     sideL2.value = ""
 
 }
+
+function delay() {
+
+            // Get all items
+            const items = document.querySelectorAll('.ans');
+
+            // Function to show items with delay
+                items.forEach((ans, index) => {
+                    setTimeout(() => {
+                    ans.style.display = ''
+                    ans.style.opacity = 1;
+                }, index * 100); // Adjust the delay (in milliseconds) as needed
+                });
+            
+
+             // Call the function to show items with delay
+        };
+
+        
+function del() {
+    const items = document.querySelectorAll('.ans');
+     items.forEach((ans, index) => {
+                    ans.style.display = 'none';
+                })
+}
